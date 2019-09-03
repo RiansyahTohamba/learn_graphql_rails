@@ -14,9 +14,9 @@ namespace :faker do
 
   task book:  :environment do
     fakers = []
-  	5.times do |index|
+  	10.times do |index|
     		fakers << {
-          user: Author.find(index+1),
+          author: Author.find(rand(1..5)),
           title: Faker::Book.title,
           publisher: Faker::Book.publisher, 
           genre: Faker::Book.genre 
@@ -24,7 +24,6 @@ namespace :faker do
 	  end
     Book.create(fakers)
     puts 'faker success inserted'
-
   end
 
   	
