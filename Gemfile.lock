@@ -204,7 +204,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   faker
   graphiql-rails
-  graphql (~> 1.7, >= 1.7.14)
+  graphql
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.11)
